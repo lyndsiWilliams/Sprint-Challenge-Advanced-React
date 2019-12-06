@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const PlayerCard = (props) => {
-  const { name, country, searches } = props.player;
+  const { name, country, searches } = props.players;
 
   return (
     <div>
