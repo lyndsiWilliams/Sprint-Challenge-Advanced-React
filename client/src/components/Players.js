@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 
+import { PlayerCard } from './PlayerCard';
+
 class Players extends React.Component {
   state = { player: null };
 
