@@ -20,7 +20,7 @@ export class Players extends React.Component {
   render() {
     const { players } = this.state;
 
-    if (players === null) {
+    if (players === []) {
       return <div>Loading...</div>
     }
 
