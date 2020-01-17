@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
 
-import { Players } from './components/Players';
+import Players from './components/Players';
 import { useDarkMode } from './hooks/useDarkMode';
 
 function App() {
+  console.log(document.body);
   const [darkMode, setDarkMode] = useDarkMode(false);
   const toggleMode = e => {
     e.preventDefault();
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={toggleMode}>Dark mode</button>
+      <button data-testid='drk-btn' onClick={toggleMode}>Dark mode</button>
       <Players />
     </div>
   );

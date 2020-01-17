@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import { PlayerCard } from './PlayerCard';
 
-export class Players extends React.Component {
+class Players extends React.Component {
   state = { players: [] };
 
   componentDidMount() {
@@ -33,3 +33,5 @@ export class Players extends React.Component {
     );
   }
 }
+
+export default Players;

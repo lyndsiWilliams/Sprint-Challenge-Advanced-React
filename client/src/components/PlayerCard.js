@@ -5,7 +5,7 @@ export const PlayerCard = (props) => {
 
   return (
     <div>
-      <p>Name: {name}</p>
+      <p data-testid='card-test'>Name: {name}</p>
       <p>Country: {country}</p>
       <p>Searches: {searches}</p>
     </div>
